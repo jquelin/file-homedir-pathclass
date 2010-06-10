@@ -16,7 +16,7 @@ use Sub::Exporter -setup => {
 foreach my $sub ( @File::HomeDir::EXPORT_OK ) {
     no strict 'refs';
     *{ $sub } = sub {
-        shift if $_[0] eq __PACKAGE__;
+        shift if defined($_[0]) && $_[0] eq __PACKAGE__;
         my $result = *{"File::HomeDir::$sub"}->(@_);
         return dir( $result );
     };
