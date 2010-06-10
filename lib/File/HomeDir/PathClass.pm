@@ -13,11 +13,15 @@ use Sub::Exporter -setup => {
 };
 
 
+# wrap all file::homedir relevant methods
 foreach my $sub ( @File::HomeDir::EXPORT_OK ) {
     no strict 'refs';   ## no critic
+    # create a new sub...
     *{ $sub } = sub {
         shift if defined($_[0]) && $_[0] eq __PACKAGE__;
+        # ... that just pass through to file::homedir method...
         my $result = *{"File::HomeDir::$sub"}->(@_);
+        # ... and wrap the result as a path::class object
         return dir( $result );
     };
 }
