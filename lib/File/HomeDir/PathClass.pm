@@ -24,3 +24,8 @@ foreach my $sub ( @File::HomeDir::EXPORT_OK ) {
 
 1;
 __END__
+
+=for Pod::Coverage
+    home
+    ^my_
+    ^users_
