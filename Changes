@@ -2,6 +2,9 @@ Changelog for File-HomeDir-PathClass
 
 {{$NEXT}}
 
+1.101611  2010-06-10 13:52:53 Europe/Paris
+ - fixed wrong git repository
+
 1.101610  2010-06-10 13:49:05 Europe/Paris
  - initial release
  - update command working
