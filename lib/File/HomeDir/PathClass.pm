@@ -29,3 +29,55 @@ __END__
     home
     ^my_
     ^users_
+
+=head1 SYNOPSIS
+
+    use File::HomeDir::PathClass '-all';
+    my $home = home();
+    # $home is a Path::Class object now
+
+    # - or -
+
+    use File::HomeDir::PathClass;
+    my $home = File::HomeDir::PathClass->home;
+    # $home is a Path::Class object now
+
+
+=head1 DESCRIPTION
+
+This module is just a wrapper around L<File::HomeDir> methods,
+transforming their return value to L<Path::Class> objects. This allows
+for easier usage of the value.
+
+Refer to L<File::HomeDir#METHODS> for a list of which functions are
+supported.
+
+C<File::HomeDir::PathClass> supports both original L<File::HomeDir> interfaces.
+
+
+=head2 Procedural mode
+
+All functions are exportable. Nothing is exported by default, though.
+One has to list which function(s) she wants to import.
+
+Some groups are defined for your convenience:
+
+=over 4
+
+=item * C<all> - all available functions.
+
+=back
+
+Note that this module is exporting subs via L<Sub::Exporter>, so groups
+are available either as C<:group> or C<-group>. One can also play any
+trick supported by L<Sub::Exporter>, check its documentation for further
+information.
+
+
+=head2 Class method mode
+
+Otherwise, functions are available as class methods, called as:
+
+    File::HomeDir::PathClass->method();
+
+In this case, one doesn't need to import anything during module use-age.
