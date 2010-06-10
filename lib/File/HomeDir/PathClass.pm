@@ -81,3 +81,31 @@ Otherwise, functions are available as class methods, called as:
     File::HomeDir::PathClass->method();
 
 In this case, one doesn't need to import anything during module use-age.
+
+
+=head1 SEE ALSO
+
+Find other relevant information in L<File::HomeDir> and L<Path::Class>.
+
+
+You can also look for information on this module at:
+
+=over 4
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/File-HomeDir-PathClass>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/File-HomeDir-PathClass>
+
+=item * Open bugs
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=File-HomeDir-PathClass>
+
+=item * Git repository
+
+L<http://github.com/jquelin/file-homedir-pathclass.git>.
+
+=back
