@@ -5,7 +5,7 @@ use warnings;
 package File::HomeDir::PathClass;
 # ABSTRACT: File::HomeDir returning Path::Class objects
 
-use File::HomeDir ();
+use File::HomeDir 0.93 ();
 use Path::Class;
 use Sub::Exporter -setup => {
     exports => [ @File::HomeDir::EXPORT_OK ],

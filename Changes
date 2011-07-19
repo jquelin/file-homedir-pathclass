@@ -1,6 +1,7 @@
 Changelog for File-HomeDir-PathClass
 
 {{$NEXT}}
+ - bump minimum require on file::homedir to 0.93
  - skip test if some directories don't exist
 
 1.101611  2010-06-10 13:52:53 Europe/Paris
