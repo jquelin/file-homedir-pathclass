@@ -15,6 +15,10 @@ foreach my $sub ( @subs ) {
     no strict 'refs';
     my $dir   = File::HomeDir::PathClass->$sub;
     my $fhdir = *{"File::HomeDir::$sub"}->();
-    isa_ok( $dir, 'Path::Class::Dir', "$sub is wrapped" );
-    is( $dir->stringify, $fhdir, "$sub is correctly wrapped" );
+    SKIP: {
+        skip( "$sub not implemented on this platform", 2 )
+            unless defined $dir;
+        isa_ok( $dir, 'Path::Class::Dir', "$sub is wrapped" );
+        is( $dir->stringify, $fhdir, "$sub is correctly wrapped" );
+    }
 }
