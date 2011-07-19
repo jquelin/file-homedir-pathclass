@@ -30,9 +30,7 @@ foreach my $sub ( @File::HomeDir::EXPORT_OK ) {
 __END__
 
 =for Pod::Coverage
-    home
-    ^my_
-    ^users_
+    home my_.* users_.*
 
 =head1 SYNOPSIS
 
