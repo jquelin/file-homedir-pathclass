@@ -1,6 +1,8 @@
 Changelog for File-HomeDir-PathClass
 
 {{$NEXT}}
+
+1.112060  2011-07-25 13:55:52 Europe/Paris
  - fix directories comparison: always use path::class stringification to
    prevent presence/absence of trailing /
 
