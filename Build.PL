@@ -20,7 +20,7 @@ my %module_build_args = (
     'Jerome Quelin'
   ],
   'dist_name' => 'File-HomeDir-PathClass',
-  'dist_version' => '1.112000',
+  'dist_version' => '1.112060',
   'license' => 'perl',
   'module_name' => 'File::HomeDir::PathClass',
   'recommends' => {},

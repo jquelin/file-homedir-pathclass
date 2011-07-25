@@ -43,7 +43,7 @@
    "provides" : {
       "File::HomeDir::PathClass" : {
          "file" : "lib/File/HomeDir/PathClass.pm",
-         "version" : "1.112000"
+         "version" : "1.112060"
       }
    },
    "release_status" : "stable",
@@ -59,7 +59,7 @@
          "web" : "http://github.com/jquelin/file-homedir-pathclass"
       }
    },
-   "version" : "1.112000",
+   "version" : "1.112060",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
