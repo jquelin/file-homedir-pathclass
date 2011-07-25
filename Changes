@@ -1,6 +1,8 @@
 Changelog for File-HomeDir-PathClass
 
 {{$NEXT}}
+ - fix directories comparison: always use path::class stringification to
+   prevent presence/absence of trailing /
 
 1.112000  2011-07-19 13:48:53 Europe/Paris
  - bump minimum require on file::homedir to 0.93
